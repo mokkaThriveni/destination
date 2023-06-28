@@ -16,13 +16,13 @@ class DestinationSearch extends Component {
       eachDestination.name.toLowerCase().includes(searchInput.toLowerCase()),
     )
     return (
-      <div classNmae="app-container">
-        <div classNmae="destinations-search-container">
-          <h1 classNmae="heading">Destination Search</h1>
-          <div classNmae="search-input-container">
+      <div className="app-container">
+        <div className="destinations-search-container">
+          <h1 className="heading">Destination Search</h1>
+          <div className="search-input-container">
             <input
               type="search"
-              classNmae="search-input"
+              className="search-input"
               placeholder="Search"
               value={searchInput}
               onChange={this.onChangeSearchInput}
@@ -30,10 +30,10 @@ class DestinationSearch extends Component {
             <Img
               src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
               alt="search icon"
-              classNmae="search-icon"
+              className="search-icon"
             />
           </div>
-          <ul classNmae="destinations-list">
+          <ul className="destinations-list">
             {searchResults.map(eachDestination => (
               <DestinationItem
                 key={eachDestination.id}
